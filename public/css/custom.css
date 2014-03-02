@@ -1,0 +1,12 @@
+@media (max-width: 58rem) {
+  .gravatar {
+    width: 174px;
+    height: 174px;
+  }
+}
+
+@media (max-width: 48rem) {
+  .gravatar {
+    margin: 0 auto;
+  }
+}

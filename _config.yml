@@ -3,11 +3,12 @@ markdown:         redcarpet
 pygments:         true
 
 # Permalinks
-permalink:        blog
+permalink:        pretty
 
 # Setup
 title:            'sheerun'
 tagline:          'blog'
+description:      'Adam Stankiewicz'
 url:              http://getpoole.com
 
 author:
@@ -21,3 +22,7 @@ version:          1.0.0
 
 github:
   repo:           https://github.com/sheerun/blog
+
+gravatar:
+  size: 215
+  secure: true
