@@ -3,17 +3,16 @@ markdown:         redcarpet
 pygments:         true
 
 # Permalinks
-permalink:        pretty
+permalink:        blog
 
 # Setup
-title:            Poole
-tagline:          'The Jekyll Butler'
-description:      'Base theme for Jekyll themes by @mdo.'
+title:            'sheerun'
+tagline:          'blog'
 url:              http://getpoole.com
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Adam Stankiewicz'
+  url:            https://twitter.com/sheerun
 
 paginate:         1
 
@@ -21,4 +20,4 @@ paginate:         1
 version:          1.0.0
 
 github:
-  repo:           https://github.com/poole/poole
+  repo:           https://github.com/sheerun/blog
