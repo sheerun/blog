@@ -215,7 +215,7 @@ bind-key -t vi-copy y \
 
 So you can seamlessly switch between any combination of vim and tmux windows using `<C-h>`, `<C-j>`, `<C-k>`, `<C-l>`.
 
-I also recomment to use following key bindings to split tmux window with `<C-Space>l` and  `<C-Space>j` with is admittedly faster than pressing `<C-Space>%` and `<C-Space>|`.
+I also recommend to use following key bindings to split tmux window with `<C-Space>l` and  `<C-Space>j` with is admittedly faster than pressing `<C-Space>%` and `<C-Space>|`.
 
 ```
 bind j split-window -v
