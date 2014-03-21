@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: How I boosted my Vim productivity
 ---
 
