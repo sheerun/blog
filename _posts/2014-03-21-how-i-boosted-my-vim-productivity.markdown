@@ -67,7 +67,7 @@ It allows me to:
 * ...
 * Hit `<C-v>` go back to previous selection if I went too far
 
-It seems like `vvv` is slower than `vp` but in practice I don’t need to think` beforehand what to select, and what key combination to use.
+It seems like `vvv` is slower than `vp` but in practice I don’t need to think beforehand what to select, and what key combination to use.
 
 This way `v` replaces `viw`, `vaw`, `vi"`, `va"`, `vi(`, `va(`, `vi[`, `va[`, `vi{`, `va{`, `vip`, `vap`, `vit`, `vat`, ... you get the idea.
 
