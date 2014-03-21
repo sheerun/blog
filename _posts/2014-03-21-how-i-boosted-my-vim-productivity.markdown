@@ -28,7 +28,7 @@ nnoremap <Leader>o :CtrlP<CR>
 #### Type `<Space>w` to save file (lot faster than `:w<Enter>`):
 
 ```
-nnoremap <Leader>o :CtrlP<CR>
+nnoremap <Leader>w :w<CR>
 ```
 
 #### Copy & paste to system clipboard with `<Space>p` and `<Space>y`:
