@@ -7,7 +7,7 @@
 
 @media (max-width: 48rem) {
   .gravatar {
-    margin: 0 auto;
+    display: none
   }
 }
 
