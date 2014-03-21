@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How I boosted my Vim productivity
+title: How to boost your Vim productivity
 ---
 
 ## I. Space is your Leader
