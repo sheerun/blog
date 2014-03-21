@@ -66,4 +66,19 @@ title: Home
       </a> - Probably the best dotfiles on the web ;-)
     </li>
   </ul>
+
+  <p>My articles:</p>
+
+  <ul>
+  {% for post in site.posts %}
+    <li>
+      <h3>
+        <a href="{{ post.url }}">
+          {{ post.title }}
+          <small>{{ post.date | date_to_string }}</small>
+        </a>
+      </h3>
+    </li>
+  {% endfor %}
+  </ul>
 </div>
