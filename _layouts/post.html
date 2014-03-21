@@ -4,7 +4,7 @@ layout: default
 
 <div class="post">
 <h1 class="post-title">{{ page.title }}</h1>
-<span class="post-date">{{ page.date | date_to_string }}</span>
+<span class="post-date">{{ page.date | date_to_string }} <a href="http://news.ycombinator.com/submit" class="hn-share-button" data-title="{{ page.title }}">Vote on HN</a></span>
 {{ content }}
 </div>
 <div id="disqus_thread"></div>
@@ -37,3 +37,12 @@ layout: default
 {% endfor %}
 </ul>
 </div>
+
+<script>
+    (function(d, t) {
+        var g = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        g.src = '//hnbutton.appspot.com/static/hn.min.js';
+        s.parentNode.insertBefore(g, s);
+    }(document, 'script'));
+</script>

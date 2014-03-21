@@ -10,3 +10,9 @@
     margin: 0 auto;
   }
 }
+
+.hn-share-iframe {
+  vertical-align: middle;
+  margin-top: -2px;
+  line-height: 2.1rem
+}
