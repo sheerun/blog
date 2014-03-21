@@ -4,7 +4,8 @@ layout: default
 
 <div class="post">
 <h1 class="post-title">{{ page.title }}</h1>
-<span class="post-date">{{ page.date | date_to_string }} <a href="http://news.ycombinator.com/submit" class="hn-share-button" data-title="{{ page.title }}">Vote on HN</a></span>
+<span class="post-date">{{ page.date | date_to_string }} <a href="https://news.ycombinator.com/submit" class="hn-button" data-title="{{ page.title }}" data-url="{{ page.url }}" data-count="horizontal">Vote on Hacker News</a>
+</span>
 {{ content }}
 </div>
 <div id="disqus_thread"></div>
@@ -38,11 +39,4 @@ layout: default
 </ul>
 </div>
 
-<script>
-    (function(d, t) {
-        var g = d.createElement(t),
-            s = d.getElementsByTagName(t)[0];
-        g.src = '//hnbutton.appspot.com/static/hn.min.js';
-        s.parentNode.insertBefore(g, s);
-    }(document, 'script'));
-</script>
+<script type="text/javascript">var HN=[];HN.factory=function(e){return function(){HN.push([e].concat(Array.prototype.slice.call(arguments,0)))};},HN.on=HN.factory("on"),HN.once=HN.factory("once"),HN.off=HN.factory("off"),HN.emit=HN.factory("emit"),HN.load=function(){var e="hn-button.js";if(document.getElementById(e))return;var t=document.createElement("script");t.id=e,t.src="//hn-button.herokuapp.com/hn-button.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},HN.load();</script>
