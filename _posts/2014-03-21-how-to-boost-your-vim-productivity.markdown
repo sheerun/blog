@@ -7,17 +7,17 @@ title: How to boost your Vim productivity
 
 `Leader` is an awesome idea. It allows for executing actions by key *sequences* instead of key *combinations*. Because I'm using it, I rarely need to press `Ctrl`-something combo to make things work.
 
-For long time I used `,` as my `Leader` key. Then, I realized I can map it to most prominent key on my keyboard. Space.
+For long time I used `,` as my `Leader` key. Then, I realized I can map it to the most prominent key on my keyboard. Space.
 
 ```
 let mapleader = "\<Space>"
 ```
 
-This turned my Vim life upside down. Now I can press `Leader` with both of my thumbs, and my fingers are always on home row. `Leader` became so easy to use I began to notorously use it in various keybindings.
+This turned my Vim life upside down. Now I can press `Leader` with both of my thumbs, and my fingers are always on home row. `Leader` became so easy to use I began to notoriously use it in various keybindings.
 
 ## II. Map your most frequent actions to Leader
 
-I identified the actions that consumed most of my time while working in Vim. I mapped them them using `Leader` key. Among others I decided to:
+I identified the actions that consumed most of my time while working in Vim. I mapped them using `Leader` key. Among others I decided to:
 
 #### Type `<Space>o` to open a new file:
 
@@ -25,7 +25,7 @@ I identified the actions that consumed most of my time while working in Vim. I m
 nnoremap <Leader>o :CtrlP<CR>
 ```
 
-#### Type `<Space>w` to save file (lot faster than `:w<Enter>`):
+#### Type `<Space>w` to save file (a lot faster than `:w<Enter>`):
 
 ```
 nnoremap <Leader>w :w<CR>
@@ -73,14 +73,14 @@ This way `v` replaces `viw`, `vaw`, `vi"`, `va"`, `vi(`, `va(`, `vi[`, `va[`, `v
 
 ## IV. Discover text search object
 
-I never really enjoyed search-and-replace in Vim until I found following snippet on [Vim wiki](http://vim.wikia.com/wiki/Copy_or_change_search_hit):
+I never really enjoyed search-and-replace in Vim until I found the following snippet on [Vim wiki](http://vim.wikia.com/wiki/Copy_or_change_search_hit):
 
 ```
 vnoremap <silent> s //e<C-r>=&selection=='exclusive'?'+1':''<CR><CR>
     \:<C-u>call histdel('search',-1)<Bar>let @/=histget('search',-1)<CR>gv
 omap s :normal vs<CR>
 ```
-It allows me for following search-and-replace flow:
+It allows me to use the following search-and-replace flow:
 
 * I search things usual way using `/something`
 * I hit `cs`, replace first match, and hit `<Esc>`
@@ -90,7 +90,7 @@ P.S. An altenative is to use [`cgn` from Vim 7.4](http://vimcasts.org/episodes/o
 
 ## V. Invent more awesome key mappings
 
-I use following shortcuts on day-to-day basis. They saved me months.
+I use the following shortcuts on a daily basis. They've saved me months.
 
 #### Automatically jump to end of text you pasted:
 
@@ -104,7 +104,7 @@ nnoremap <silent> p p`]
 
 #### Prevent replacing paste buffer on paste:
 
-I can select some text and paste over it without worrying my paste buffer is replaced by just just removed text (place it close to end of `~/vimrc`).
+I can select some text and paste over it without worrying if my paste buffer was replaced by the just removed text (place it close to end of `~/vimrc`).
 
 ```
 " vp doesn't replace paste buffer
@@ -145,15 +145,15 @@ map q: :q
 
 I use [vim-vroom](https://github.com/skalnik/vim-vroom) and properly configured tmux for my tests.
 
-Because `vim-room` uses `<Leader>r` for executing test suite, and I use `<Space>` as my Leader, I press `<Space>r`, and tests run next to me.
+Because `vim-room` uses `<Leader>r` for executing the test suite, and I use `<Space>` as my Leader, I press `<Space>r`, and tests run next to me.
 
-And because test are run in tmux *split*, I can always see my code, and run my tests while already developing next piece of it.
+And because tests are run in a tmux *split*, I can always see my code and run my tests while already developing the next piece of it.
 
 ## VII. Use Ctrl-Z to switch back to Vim
 
 I frequently need to execute random command in my shell. To achieve it I pause Vim by pressing `Ctrl-z`, type command and press `fg<Enter>` to switch back to Vim. 
 
-The `fg` part really hurted me. I wanted to just hit  `Ctrl-z` once again to get back to Vim view. I couldn’t find any solution, so I developed my own which works wonderfully under ZSH:
+The `fg` part really hurt me. I wanted to just hit `Ctrl-z` once again to get back to Vim. I couldn’t find a solution, so I developed my own which works wonderfully under ZSH:
 
 ```
 fancy-ctrl-z () {
@@ -169,22 +169,22 @@ zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
 ```
 
-If you paste it to yoru `~/.zshrc`, you'll be able to switch back and forth between my shell and Vim **extremely** fast. Try it by yourself.
+If you paste it in your `~/.zshrc` you'll be able to switch back and forth between your shell and Vim **extremely** fast. Try it for yourself.
 
 ## VIII. Setup Tmux the Right Way
 
-The Tmux + OSX + Vim combination is pretty hard because of:
+The Tmux + OS X + Vim combination is pretty hard because of:
 
 * poor system clipboard handling
 * difficult navigation between Vim and Tmux windows
 * difficult execution of tmux commands (`C-b`)
 * hard to use copy mode in tmux
 
-I spent quite a long time to tune it correctly and here are the results:
+I spent quite a long time tuning it correctly and here are the results:
 
 #### Bind `<C-Space>` as your new tmux prefix.
 
-Some people use `<C-a>` mapping, but I use this shortcut to go to beginning of line, so it's out of scope. Plus `<C-Space>` plays much better with bindings I describe later.
+Some people use `<C-a>` mapping, but I use this shortcut to go to the beginning of the line, so it's out of scope. Plus `<C-Space>` plays much better with bindings I describe later.
 
 ```
 unbind C-b
@@ -203,7 +203,7 @@ bind C-Space copy-mode
 
 #### Use `y` and `reattach-to-user-namespace` (on OSX)
 
-For copying to system clipboard. You'll need to issue `brew install reattach-to-user-namespace` beforehand.
+For copying to the system clipboard, you'll need to `brew install reattach-to-user-namespace` beforehand.
 
  
 ```
@@ -215,7 +215,7 @@ bind-key -t vi-copy y \
 
 So you can seamlessly switch between any combination of vim and tmux windows using `<C-h>`, `<C-j>`, `<C-k>`, `<C-l>`.
 
-I also recommend to use following key bindings to split tmux window with `<C-Space>l` and  `<C-Space>j` with is admittedly faster than pressing `<C-Space>%` and `<C-Space>|`.
+I also recommend using the following key bindings to split tmux windows with `<C-Space>l` and `<C-Space>j` which is admittedly faster than pressing `<C-Space>%` and `<C-Space>|`.
 
 ```
 bind j split-window -v
@@ -227,16 +227,16 @@ bind C-l split-window -h
 
 See my [tmux.conf](https://github.com/sheerun/dotfiles/blob/master/tmux.conf) for more good stuff.
 
-## IX. Make Ctrl-P plugin lot faster for git projects
+## IX. Make Ctrl-P plugin a lot faster for Git projects
 
-Put following to your `.vimrc`:
+Put following in your `.vimrc`:
 
 ```
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 let g:ctrlp_use_caching = 0
 ```
 
-You recommend using [vim-scripts/gitignore](https://github.com/vim-scripts/gitignore).
+I recommend using [vim-scripts/gitignore](https://github.com/vim-scripts/gitignore).
 
 ## X. Use package manager
 
@@ -260,9 +260,9 @@ NeoBundle 'Valloric/YouCompleteMe', {
 NeoBundle 'rking/pry-de', {'rtp': 'vim/'}
 ```
 
-## XI. Take advantage from Vim plugins
+## XI. Take advantage of Vim plugins
 
-Here are few general plugins I use that boost my productivity:
+Here are a few general plugins I use to boost my productivity:
 
 * [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 * [ack.vim](https://github.com/mileszs/ack.vim) (ag.vim is also good)
@@ -283,7 +283,7 @@ let g:airline_right_sep=''
 let g:airline_section_z=''
 ```
 
-I am ruby developer, so I use Ruby some plugins:
+I am a Ruby developer, so I use some Ruby plugins:
 
 * [tpope/vim-rails](https://github.com/tpope/vim-rails)
 * [vim-textobj-rubyblock](https://github.com/nelstrom/vim-textobj-rubyblock) (`var`, `vir` for selecting ruby blocks)
@@ -296,22 +296,22 @@ nmap sk :SplitjoinJoin<cr>
 
 ## XII. Speed-up setup of Vim on your server
 
-I often need to use vim on servers to configure them. Unfortunately vim doesn’t come out of the box with sensible defaults.
+I often need to use Vim on servers to configure them. Unfortunately Vim doesn’t come out of the box with sensible defaults.
 
-One can use [vim-sensible](https://github.com/tpope/vim-sensible) to achieve it but it was not enough for me. I developed [vimrc](https://github.com/sheerun/vimrc) plugin with really good defaults (especially for Ruby developer) that makes `~/.vimrc` a single source of vim configuration. It also includes better default scheme, package manger, and multi-language syntax support.
+One can use [vim-sensible](https://github.com/tpope/vim-sensible) to achieve it but it was not enough for me. I developed [vimrc](https://github.com/sheerun/vimrc) plugin with really good defaults (especially for Ruby developers) that makes `~/.vimrc` a single source of Vim configuration. It also includes a better default scheme, package manger, and multi-language syntax support.
 
-That means I don’t need to mangle `~/.vim` directory to configure vim on server-side. The installation of Vim environment on my server is as simple as:
+That means I don’t need to mangle `~/.vim` directory to configure Vim on server-side. The installation of a Vim environment on my server is as simple as:
 
 ```
 git clone --recursive https://github.com/sheerun/vimrc.git ~/.vim
 ```
 
-I also developed my [dotfiles](https://github.com/sheerun/dotfiles) so my  development environment can be set up within seconds at any time.
+I also developed my [dotfiles](https://github.com/sheerun/dotfiles) so my development environment can be set up in seconds.
 
 ## Introspect!
 
-The key to good Vim setup is continuous recognition of issues you encounter during your development and responding to them. 
+The key to a good Vim setup is continuous recognition of issues you encounter during your development and responding to them. 
 
-The response can be quick mapping in the `.vimrc`, a google for solution, asking a question on IRC, you name it.
+The response can be a quick mapping in the `.vimrc`, a google for solution, asking a question on IRC, you name it.
 
-What boosts Your productivity in Vim?
+What boosts your productivity in Vim?
