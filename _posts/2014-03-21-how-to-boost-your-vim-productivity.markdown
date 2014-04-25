@@ -158,8 +158,8 @@ The `fg` part really hurt me. I wanted to just hit `Ctrl-z` once again to get ba
 ```
 fancy-ctrl-z () {
   if [[ $#BUFFER -eq 0 ]]; then
-    fg
-    zle redisplay
+    BUFFER="fg"
+    zle accept-line
   else
     zle push-input
     zle clear-screen
