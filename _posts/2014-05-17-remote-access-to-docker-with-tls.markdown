@@ -19,11 +19,11 @@ Here are 3 easy steps to setup it:
 
 You need to generate 3 kinds of certificates:
 
-* CA certificate is used to generate client and server certs
-* Client certificate is used by remote Docker client
-* Server certificate is used by Docker daemon on server
+* CA certificate used for generating client and server certs
+* Client certificate used by remote Docker client
+* Server certificate used by Docker daemon on server
 
-I wrote a little Ruby script that generates all three certificates for you. All you need to do is [clone this repository](https://gist.github.com/sheerun/7fe6ac9cecf8d08e8d52) and run following commands:
+I wrote a little Ruby script that generates all three certificates for you. All you need to do is [clone this repository](https://gist.github.com/sheerun/ccdeff92ea1668f3c75f) and run following commands:
 
 ```bash
 $ gem install certificate_authority
