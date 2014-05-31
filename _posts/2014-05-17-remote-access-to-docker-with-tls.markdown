@@ -3,7 +3,7 @@ layout: post
 title: Remote access to Docker with TLS
 ---
 
-By default Docker is only available though UNIX socket. It works if you use it locally. For remote access, you generally had three options:
+By default Docker is available only on UNIX socket. Because UNIX sockets cannot be forwarded through SSH, you generally had 3 options:
 
 1. [Hack nginx to forward traffic to Docker](http://blog.james-carr.org/2013/10/30/securing-dockers-remote-api/)
 2. [Use SSH and socat to tunnel connection](http://blog.james-carr.org/2013/10/30/securing-dockers-remote-api/)
@@ -13,7 +13,7 @@ By default Docker is only available though UNIX socket. It works if you use it l
 
 The situation was hopeless until [Docker implemented TLS auth in 0.10](http://blog.docker.io/2014/04/docker-0-10-quality-and-ops-tooling/).
 
-Here are 3 easy steps to setup it:
+I present few simple steps to setup it:
 
 ## I. Generate your certificates
 
@@ -37,7 +37,7 @@ Certificates should be now available under `~/.docker` path.
 
 ## II. Copy server certificates to remote location
 
-The script generated keys and certificates neede by Docker daemon `~/.docker/example.com` (example.com is your domain name).
+The script generated keys and certificates required by Docker daemon `~/.docker/example.com` (example.com is your domain name).
 
 Copy them on your server to `~/.docker` directory:
 
