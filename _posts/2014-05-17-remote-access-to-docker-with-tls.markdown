@@ -3,15 +3,15 @@ layout: post
 title: Remote access to Docker with TLS
 ---
 
-By default Docker is only available though UNIX socket. It works if you use it locally. For remote access, you generally had 3 options:
+By default Docker is only available though UNIX socket. It works if you use it locally. For remote access, you generally had three options:
 
 1. [Hack nginx to forward traffic to Docker](http://blog.james-carr.org/2013/10/30/securing-dockers-remote-api/)
 2. [Use SSH and socat to tunnel connection](http://blog.james-carr.org/2013/10/30/securing-dockers-remote-api/)
 3. [Make Docker daemon listen on exposed port](http://stackoverflow.com/questions/18038985/how-to-connect-to-docker-api-from-another-machine)
 
-First solution is really cumbersome to setup. Second requires socat installed on both server and client. This is not secure and anyone can connect or intercept Docker traffic as connection is not encrypted.
+1st solution is really cumbersome to setup. 2nd requires socat installed on both server and client. 3rd is not secure and anyone can connect or intercept Docker traffic as connection is not encrypted.
 
-The situation were hopeless until [Docker implemented TLS auth in 0.10](http://blog.docker.io/2014/04/docker-0-10-quality-and-ops-tooling/).
+The situation was hopeless until [Docker implemented TLS auth in 0.10](http://blog.docker.io/2014/04/docker-0-10-quality-and-ops-tooling/).
 
 Here are 3 easy steps to setup it:
 
