@@ -1,6 +1,13 @@
-@media (max-width: 58rem) {
-  .gravatar {
-    display: none;
+@media (max-width: 64rem) {
+  .extra-content {
+    display: none !important;
+  }
+}
+
+@media (min-width: 64rem) {
+  .header-top {
+    position: relative;
+    left: 80px
   }
 }
 
@@ -9,3 +16,21 @@
   margin-top: -4px;
   line-height: 2rem
 }
+
+.sticky-bottom {
+  position: fixed;
+  width: 277px;
+  max-width: 277px;
+  bottom: 40px;
+  right: 42px;
+}
+
+.avatar-top {
+  border-radius: 7px;
+  border: 3px solid #333;
+  display: inline-block;
+  position: absolute;
+  top: 7px;
+  left: 20px;
+}
+

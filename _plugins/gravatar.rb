@@ -45,7 +45,7 @@ module Jekyll
     def gravatar(email_address, gravatar_mode=nil)
       @gravatar_mode = gravatar_mode
       email_address ||= ""
-      return "<img class=\"gravatar\" src=\"#{gravatar_url(email_address)}\"></img>"
+      gravatar_url(email_address)
     end
 
     private

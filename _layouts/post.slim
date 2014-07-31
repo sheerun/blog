@@ -3,10 +3,12 @@ layout: default
 ---
 .post
   h1.post-title
-    | {{ page.title }}
+    span
+      | {{ page.title }}
   span.post-date
     | {{ page.date | date_to_string }}
-  |  {{ content }} 
+  div
+    | {{ content }} 
 #disqus_thread
 .related
   h2
