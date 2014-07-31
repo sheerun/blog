@@ -1,0 +1,61 @@
+---
+layout: default
+title: Home
+---
+
+.posts[style="margin-top: -4rem; margin-bottom: -4rem"]
+  markdown:
+    ### Hi!
+
+    My name is Adam Stankiewicz.
+
+    I am professional Ruby developer currently working at [Monterail.com][]
+
+    I love Open Source. I’m actively developing following software:
+
+      - [Rails Assets][] - a proxy between Bower and Bundler
+      - [Vim Polyglot][] - a solid language pack for Vim
+      - [Vimrc][] - plugin serving as foundation of vim configuration
+      - [S3 File Field][] - direct uploading to Amazon S3 using CORS
+      - [Filelock][] - file locking solution using flock command
+      - [Sublime Wombat Theme][] - pretty and configurable theme for ST3
+      - [Rails 4 Bootstrap][] - properly configured Rails 4 application
+      - [RSpec Gherkin][] - a semantic bridge between Gherkin and RSpec
+      - [Extension Auto Reloader][] - for developing extensions in Chrome
+      - [Dotfiles][] - Probably the best dotfiles on the web ;-)
+
+      [Monterail.com]: http://monterail.com
+      [Rails Assets]: http://github.com/rails-assets/rails-assets
+      [Vim Polyglot]: http://github.com/sheerun/vim-polyglot
+      [Vimrc]: http://github.com/sheerun/vimrc
+      [S3 File Field]: http://github.com/sheerun/s3-file-field
+      [Filelock]: http://github.com/sheerun/filelock
+      [Sublime Wombat Theme]: http://github.com/sheerun/sublime-wombat-theme
+      [Rails 4 Bootstrap]: http://github.com/sheerun/rails4-bootstrap
+      [RSpec Gherkin]: http://github.com/sheerun/rspec-gherkin
+      [Extension Auto Reloader]: https://chrome.google.com/webstore/detail/extension-auto-reloader/fbdbbpminhngjejgblbbpjapahknpcpk
+      [Dotfiles]: http://github.com/sheerun/dotfiles
+
+  p
+    | My articles:
+  ul
+    |  {% for post in site.posts %} 
+    li
+      h3
+        a[href="{{ post.url }}"]
+          |  {{ post.title }} 
+          small
+            | {{ post.date | date_to_string }}
+    |  {% endfor %} 
+    li
+      h3
+        a[href="http://codetunes.com/2013/little-known-angular-directives/"]
+          |  Little-known directives of Angular.js 
+          small
+            | {{ "2013-11-05" | date_to_string }}
+    li
+      h3
+        a[href="http://codetunes.com/2012/make-your-site-more-accessible/"]
+          |  Make your site more accessible 
+          small
+            | {{ "2012-06-27" | date_to_string }}
