@@ -5,9 +5,10 @@
 }
 
 @media (min-width: 64rem) {
-  .header-top {
+  .header__text {
     position: relative;
-    left: 80px
+    left: 80px;
+    top: -10px;
   }
 }
 
@@ -34,3 +35,26 @@
   left: 20px;
 }
 
+.feedback-form__field {
+  margin-bottom: 15px;
+}
+
+.feedback-form__input {
+  width: 100%;
+  font-size: 1.8rem;
+  border: 1px dashed #bbb;
+  padding: 5px;
+}
+
+.feedback-form__textarea {
+  width: 100%;
+  font-size: 1rem;
+  border: 1px dashed #bbb;
+  padding: 5px;
+  min-height: 200px;
+}
+
+.header__go-home {
+  position: relative;
+  top: -25px;
+}
