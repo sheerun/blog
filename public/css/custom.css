@@ -2,6 +2,7 @@
   .extra-content {
     display: none !important;
   }
+
 }
 
 @media (min-width: 64rem) {
@@ -10,6 +11,20 @@
     left: 80px;
     top: -10px;
   }
+
+  .sidebar {
+    background-size: auto 120% !important;
+  }
+}
+
+.sidebar {
+  background-image: url('/public/background.jpg');
+  background-size: 100% auto;
+  color: white;
+}
+
+.u__shadow {
+  text-shadow: 0 0 4px black;
 }
 
 .hn-button {
@@ -54,7 +69,12 @@
   min-height: 200px;
 }
 
+.header__blog-name {
+  color: black !important;
+}
+
 .header__go-home {
   position: relative;
   top: -25px;
 }
+
