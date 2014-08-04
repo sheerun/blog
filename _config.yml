@@ -15,8 +15,6 @@ author:
   name:           'Adam Stankiewicz'
   url:            https://twitter.com/sheerun
 
-paginate:         1
-
 # Custom vars
 version:          1.0.0
 
