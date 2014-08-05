@@ -143,7 +143,7 @@ a.sidebar-nav-item:focus {
  * Flip the orientation of the page by placing the `.sidebar` on the right.
  */
 
-@media (min-width: 64em) {
+@media (min-width: 64rem) {
   .layout-reverse .sidebar {
     left: auto;
     right: 0;
@@ -154,7 +154,7 @@ a.sidebar-nav-item:focus {
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 64rem) {
   .layout-reverse .content {
     margin-left: 4rem;
     margin-right: 22rem;
