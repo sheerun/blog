@@ -100,12 +100,7 @@
   cursor: pointer;
 }
 
-.header__blog-name {
-  color: black !important;
-}
-
 .header__go-home {
   position: relative;
   top: -25px;
 }
-
