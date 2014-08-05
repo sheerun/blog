@@ -13,12 +13,26 @@
   }
 
   .sidebar {
+    background-image: url('/public/background-v.jpg') !important;
     background-size: auto 120% !important;
   }
 }
 
+@media (max-height: 660px) {
+  .bottom__texts {
+    display: none;
+  }
+}
+
+@media (max-height: 600px) {
+  .rrssb-buttons {
+    display: none;
+  }
+}
+
+
 .sidebar {
-  background-image: url('/public/background.jpg');
+  background-image: url('/public/background-h.jpg');
   background-size: 100% auto;
   color: white;
 }

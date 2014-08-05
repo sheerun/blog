@@ -14,22 +14,18 @@
       </div>
     </div>
 
-    <ul class="sidebar-nav">
-      {% assign pages_list = site.pages %}
-      {% for node in pages_list %}
-        {% if node.title != null %}
-          {% if node.layout == "page" %}
-            <li class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">
-              <a href="{{ node.url }}">{{ node.title }}</a>
-            </li>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </ul>
+    <div class="extra-content" style="height: 50%; overflow: hidden;">
+      <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/sheerun" data-widget-id="496447237249961984" width="280" height="370" data-link-color="#268bd2" data-chrome="noscrollbar ">Tweets by @sheerun</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    </div>
 
     <div class="sticky-bottom extra-content">
-      <p style="margin-bottom: 0" class="lead u__shadow">Adam Stankiewicz</p>
-      <p class="u__shadow">Ruby, JavaScript, Open Source</p>
+      <div class="bottom__texts">
+
+        <p style="margin-bottom: 0" class="lead u__shadow">Adam Stankiewicz</p>
+        <p class="u__shadow">Ruby, JavaScript, Open Source</p>
+      </div>
       <ul class="rrssb-buttons clearfix">
         <li class="github">
           <a href="https://github.com/sheerun">

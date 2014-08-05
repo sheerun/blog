@@ -9,7 +9,7 @@ title: Home
 
     My name is Adam Stankiewicz.
 
-    I am professional Ruby developer currently working at [Monterail.com][]
+    I am professional Ruby developer currently working at [Monterail.com][].
 
     I love Open Source. I’m secretly developing following projects:
 
@@ -37,25 +37,19 @@ title: Home
       [Dotfiles]: http://github.com/sheerun/dotfiles
 
   h3
-    | My articles:
+    | My up-to-date articles:
   ul
     |  {% for post in site.posts %} 
     li
       h3
         a[href="{{ post.url }}"]
           |  {{ post.title }} 
-          small
-            | {{ post.date | date_to_string }}
     |  {% endfor %} 
     li
       h3
         a[href="http://codetunes.com/2013/little-known-angular-directives/"]
           |  Little-known directives of Angular.js 
-          small
-            | {{ "2013-11-05" | date_to_string }}
     li
       h3
         a[href="http://codetunes.com/2012/make-your-site-more-accessible/"]
           |  Make your site more accessible 
-          small
-            | {{ "2012-06-27" | date_to_string }}
