@@ -11,8 +11,9 @@ title: Home
 
     I am professional Ruby developer currently working at [Monterail.com][].
 
-    I love Open Source. I’m secretly developing following projects:
+    I love Open Source. I developed or maintain following projects:
 
+      - [Bower][] - frontend assets manager (core team member)
       - [Rails Assets][] - a proxy between Bower and Bundler
       - [Vim Polyglot][] - a solid language pack for Vim
       - [Vimrc][] - plugin serving as foundation of vim configuration
@@ -23,8 +24,13 @@ title: Home
       - [RSpec Gherkin][] - a semantic bridge between Gherkin and RSpec
       - [Extension Auto Reloader][] - for developing extensions in Chrome
       - [Dotfiles][] - Probably the best dotfiles on the web ;-)
+      - [Wordnet][] - a large network of words (bachelor's degree work)
+
+    I couch on [Rails Girls][] and organize [Meet.js][]. I am [a speaker](https://speakerdeck.com/sheerun).
 
       [Monterail.com]: http://monterail.com
+      [Bower]: http://bower.io
+      [Wordnet]: https://github.com/wordnet/wordnet
       [Rails Assets]: http://github.com/rails-assets/rails-assets
       [Vim Polyglot]: http://github.com/sheerun/vim-polyglot
       [Vimrc]: http://github.com/sheerun/vimrc
@@ -35,21 +41,27 @@ title: Home
       [RSpec Gherkin]: http://github.com/sheerun/rspec-gherkin
       [Extension Auto Reloader]: https://chrome.google.com/webstore/detail/extension-auto-reloader/fbdbbpminhngjejgblbbpjapahknpcpk
       [Dotfiles]: http://github.com/sheerun/dotfiles
+      [Rails Girls]: http://railsgirls.com/
+      [Meet.js]: https://www.facebook.com/groups/meetjs.wroclaw/
 
-  h3
-    | My up-to-date articles:
+  | I try to develop a blogging habit (with questionable luck):
+
   ul
+    li
+      h4
+        a[href="https://coderwall.com/sheerun"]
+          | My protips on the CoderWall
     |  {% for post in site.posts %} 
     li
-      h3
+      h4
         a[href="{{ post.url }}"]
           |  {{ post.title }} 
     |  {% endfor %} 
     li
-      h3
+      h4
         a[href="http://codetunes.com/2013/little-known-angular-directives/"]
           |  Little-known directives of Angular.js 
     li
-      h3
+      h4
         a[href="http://codetunes.com/2012/make-your-site-more-accessible/"]
           |  Make your site more accessible 
