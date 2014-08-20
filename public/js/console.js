@@ -64,6 +64,7 @@ prompt.addEventListener('keydown', function(e) {
   if (code == 13) {
     if (prompt.value.substring(2, 5) == 'cat') {
       insertText("zsh: segmentation fault   " + prompt.value.substring(2) + "\n\n");
+      prompt.style.display = 'none';
       prompt.disabled = true;
     } else {
       insertText("zsh: command not found: " + prompt.value.substring(2) + "\n\n");
