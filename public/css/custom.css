@@ -1,40 +1,14 @@
-@media (max-width: 64rem) {
+@media (max-width: 1180px) {
   .extra-content {
     display: none !important;
   }
 
 }
 
-@media (min-width: 64rem) {
-  .header__text {
-    position: relative;
-    left: 80px;
-    top: -10px;
-  }
-
-  .sidebar {
-    background-image: url('/public/background-v.jpg') !important;
-    background-size: auto 120% !important;
-  }
-}
-
-@media (max-height: 660px) {
-  .bottom__texts {
-    display: none;
-  }
-}
-
-@media (max-height: 600px) {
-  .rrssb-buttons {
-    display: none;
-  }
-}
-
-
 .sidebar {
-  background-image: url('/public/background-h.jpg');
-  background-size: 100% auto;
-  color: white;
+  color: #eee;
+  background-color: #1d1d1d;
+  background-image: url('/public/img/black.gif');
 }
 
 .u__shadow {
@@ -103,4 +77,66 @@
 .header__go-home {
   position: relative;
   top: -25px;
+}
+
+.header__text {
+  text-align: center;
+  padding-left: 20px;
+}
+
+.header__text a {
+  text-decoration: none;
+}
+
+.header__text h1 {
+  color: #f9f9f9;
+}
+
+.header__text h1:hover {
+  color: #fff !important;
+}
+
+.sidebar__output {
+  width: 100%;
+  border: 0;
+  background-color: white;
+  color: black;
+  font-size: 13px;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.sidebar__console {
+  position: relative;
+  padding: 10px;
+  width: 280px;
+  height: 450px;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: text;
+  overflow-y: scroll;
+}
+
+.sidebar__output a {
+  color: black;
+  text-decoration: none;
+}
+
+.sidebar__output a:hover {
+  border-bottom: 2px solid black;
+}
+
+.sidebar__textarea {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  border: 0;
+  background-color: white;
+  color: black;
+  font-size: 13px;
+  outline: 0;
+  resize: none;
+  width: 100%;
+  overflow: hidden;
+  height: 20px;
+  padding: 0;
+  margin: 0;
 }
