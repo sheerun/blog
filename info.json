@@ -1,0 +1,12 @@
+{
+  name: 'Adam Stankiewicz',
+  email: 'sheerun@sher.pl',
+  twitter: '@sheerun',
+  github: 'sheerun',
+  avatar: '/public/face.jpg',
+  interests: [
+    'ruby',
+    'javascript',
+    'open source'
+  ]
+}
