@@ -50,7 +50,7 @@ prompt.addEventListener('keydown', function(e) {
 
   var insertText = function(text) {
       var el = document.createElement("div");
-      el.innerText = el.textContent = text;
+      el.innerText = el.textContent = prompt.value + "\n" + text;
       text = el.innerHTML;
       prompt.value = "$ ";
       output.innerHTML += text;
