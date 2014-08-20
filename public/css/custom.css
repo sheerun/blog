@@ -3,6 +3,18 @@
     display: none !important;
   }
 
+  footer {
+    background-image: url('/public/img/black.gif');
+    height: 20px;
+    background-position: right;
+  }
+}
+
+@media (min-width: 1180px) {
+  .header__text {
+    text-align: center;
+    padding-left: 20px;
+  }
 }
 
 .sidebar {
@@ -77,11 +89,6 @@
 .header__go-home {
   position: relative;
   top: -25px;
-}
-
-.header__text {
-  text-align: center;
-  padding-left: 20px;
 }
 
 .header__text a {
