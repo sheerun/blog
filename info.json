@@ -3,7 +3,7 @@
   email: 'sheerun@sher.pl',
   twitter: '@sheerun',
   github: 'sheerun',
-  avatar: '/public/face.jpg',
+  location: 'Wrocław, Poland',
   interests: [
     'ruby',
     'javascript',
