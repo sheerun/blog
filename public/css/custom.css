@@ -13,7 +13,6 @@
 @media (min-width: 1180px) {
   .header__text {
     text-align: center;
-    padding-left: 20px;
   }
 }
 
@@ -103,6 +102,11 @@
   color: #fff !important;
 }
 
+.header__avatar {
+  width: 60%;
+  margin: 20px auto;
+}
+
 .sidebar__output {
   width: 100%;
   border: 0;
@@ -117,7 +121,7 @@
   position: relative;
   padding: 10px;
   width: 280px;
-  height: 450px;
+  height: 350px;
   border-radius: 5px;
   background-color: #fff;
   cursor: text;
