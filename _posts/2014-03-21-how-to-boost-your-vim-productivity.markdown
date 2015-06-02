@@ -327,4 +327,4 @@ What boosts your productivity in Vim?
 
 ### Want to learn more?
 
-<small>Hire me as your Vim consultant and [write me an e-mail](sheerun@sher.pl)</small>.
+<small>Hire me as your Vim consultant and [write me an e-mail](mailto:sheerun@sher.pl)</small>.
