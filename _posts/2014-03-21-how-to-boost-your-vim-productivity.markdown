@@ -153,7 +153,7 @@ And because tests are run in a tmux *split*, I can always see my code and run my
 
 I frequently need to execute random command in my shell. To achieve it I pause Vim by pressing `Ctrl-z`, type command and press `fg<Enter>` to switch back to Vim. 
 
-The `fg` part really hurt me. I wanted to just hit `Ctrl-z` once again to get back to Vim. I couldn’t find a solution, so I developed my own which works wonderfully under ZSH:
+The `fg` part really hurt sme. I just wanted to hit `Ctrl-z` once again to get back to Vim. I could not find a solution, so I developed one on my own that works wonderfully with ZSH:
 
 ```
 fancy-ctrl-z () {
