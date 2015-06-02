@@ -324,3 +324,7 @@ The key to a good Vim setup is continuous recognition of issues you encounter du
 The response can be a quick mapping in the `.vimrc`, a google for solution, asking a question on IRC, you name it.
 
 What boosts your productivity in Vim?
+
+### Want to learn more?
+
+<small>Hire me as your Vim consultant and [write me an e-mail](sheerun@sher.pl)</small>.
