@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -e
+
+docker run -it --rm --label=jekyll --volume=$(pwd):/srv/jekyll --net host -p 4000:80 jekyll/jekyll jekyll serve --watch --force_polling

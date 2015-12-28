@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll jekyll/jekyll:builder jekyll build
+
+docker build -t sheerun/blog .
+
+docker push sheerun/blog
