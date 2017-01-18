@@ -24,3 +24,5 @@ github:
 gravatar:
   size: 215
   secure: true
+
+theme: jekyll-theme-tactile
