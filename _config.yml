@@ -25,3 +25,6 @@ gravatar:
   secure: true
 
 theme: jekyll-theme-tactile
+
+include:
+- _redirects
